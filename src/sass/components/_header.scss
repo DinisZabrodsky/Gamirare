@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    width: 100%;
+    
+
+    background-color: rgba(25, 24, 56, 0.8);
+}
+
+.header-top {
+    top: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 84px;
+
+    height: 60px;
+    
+    // @media screen and (min-width: 1920px) {
+    //     gap: 84px;
+    //     height: 60px;
+    // }
+    
+}
+
+.header-list {
+    display: flex;
+
+    gap: 76px;
+
+    & a {
+        padding: 20px 0;
+        
+        cursor: pointer;
+    }
+}
