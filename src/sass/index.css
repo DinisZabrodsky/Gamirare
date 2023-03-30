@@ -54,4 +54,64 @@ header {
 .header-list a {
   padding: 20px 0;
   cursor: pointer;
+}
+
+.hero {
+  align-items: center;
+}
+
+.hero-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1920px;
+  height: 1036px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-image: url(./images/Hero/BGHero.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-conteiner {
+    background-image: url(./images/Hero/BGHero@2x.jpg);
+  }
+}
+
+.hero-titel {
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #F3FEFF;
+  text-shadow: 0px 0px 10px #16DCF2;
+}
+
+.hero-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.hero-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 16px;
+  width: 261px;
+  height: 56px;
+  background: linear-gradient(92.64deg, rgba(22, 220, 242, 0.2) 0%, rgba(22, 220, 242, 0) 100%), radial-gradient(107.5% 107.5% at 50% 215%, rgba(22, 220, 242, 0.08) 0%, rgba(22, 220, 242, 0) 100%), linear-gradient(267.36deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 2px solid rgba(22, 220, 242, 0.1);
+  border-radius: 999px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }/*# sourceMappingURL=index.css.map */
