@@ -1,5 +1,7 @@
 header {
     position: fixed;
+    top: 0;
+
     width: 100%;
     
 
@@ -15,12 +17,11 @@ header {
     align-items: center;
     justify-content: center;
 
-    gap: 84px;
-
     height: 60px;
-    
+    gap: 60px;
+
     // @media screen and (min-width: 1920px) {
-    //     gap: 84px;
+    //     gap: 60px;
     //     height: 60px;
     // }
     
@@ -28,12 +29,45 @@ header {
 
 .header-list {
     display: flex;
+    gap: 60px;
 
-    gap: 76px;
+    & li {
+        border: none;
+    }
+}
 
-    & a {
-        padding: 20px 0;
-        
+.header-list a, .header-language {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+
+        text-transform: uppercase;
+
+        color: #DDDDDD;
+        padding: 20px 8px;
         cursor: pointer;
+
+        transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        border: none;
+        outline: none;
+        text-shadow: 0px 0px 10px #16DCF2;
+    }
+
+}
+
+.header-language {
+    background-color: transparent;
+    border: none;
+
+    & option {
+        color: #DDDDDD;
+
+        border: none;
+        border-radius: 3px;
+        background-color: #011126;
     }
 }

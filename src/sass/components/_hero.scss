@@ -4,17 +4,20 @@
 
 .hero-conteiner {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+ 
     flex-direction: column;
-
-    width: 1920px;
-    height: 1036px;
+    align-items: center;
+    justify-content: center;
 
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
-    background-color: black;
+
+    max-width: 1920px;
+    height: 1037px;
 
     background-image: url(../images/Hero/BGHero.jpg);
 
@@ -24,60 +27,48 @@
         background-image: url(../images/Hero/BGHero@2x.jpg);
     }
 
-    // @media screen and (min-width: 768px) {
-    //     background-image: url();
+    // @media screen and (min-width: 1920px) {
+        // max-width: 1920px;
+        // height: 1037px;
 
-    //     @media screen and (min-device-pixel-ratio: 2),
-    //         (min-resolution: 192dpi),
-    //         (min-resolution: 2dppx) {
-    //             background-image: url();
-            
-    //     }
-    // }
-}
+        // background-image: url(../images/Hero/BGHero.jpg);
 
-.hero-titel {
-    font-family: 'Cinzel Decorative';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 128px;
-    line-height: 100%;
-
-    text-transform: uppercase;
-
-    color: #F3FEFF;
-
-    text-shadow: 0px 0px 10px #16DCF2;
+        // @media screen and (min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        //     background-image: url(../images/Hero/BGHero@2x.jpg);
+        // }
+    //}
 }
 
 .hero-text {
+    margin: 20px;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 100%;
+    text-transform: uppercase;
 
     color: #FFFFFF
 }
 
 .hero-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+
+    margin-top: 40px;
     padding: 16px 32px;
     gap: 16px;
 
-    width: 261px;
-    height: 56px;
+    // width: 261px;
+    // height: 56px;
 
     background: linear-gradient(92.64deg, rgba(22, 220, 242, 0.2) 0%, rgba(22, 220, 242, 0) 100%), radial-gradient(107.5% 107.5% at 50% 215%, rgba(22, 220, 242, 0.08) 0%, rgba(22, 220, 242, 0) 100%), linear-gradient(267.36deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     border: 2px solid rgba(22, 220, 242, 0.1);
     border-radius: 999px;
-
-/* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }

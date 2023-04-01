@@ -1,6 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 // 1920 1440 768 375
+body {
+    background-color: #011126;
+}
 
 .conteiner {
     margin-left: auto;
@@ -30,4 +33,26 @@ a {
     text-decoration: none;
 }
 
+.hero-titel {
+    margin: 0;
 
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 100%;
+
+    color: #F3FEFF;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #16DCF2;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    
+    font-style: normal;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
