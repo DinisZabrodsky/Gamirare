@@ -1,12 +1,19 @@
+
+
 .our-history {
-    padding-top: 80px;
-    padding-bottom: 190px;
 
     background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+    
+    &-conteiner {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
 
+    
     &-titel {
         position: relative;
         margin-bottom: 115px;
+        margin-left: 25px;
 
         &::after {
             content: "";
@@ -27,4 +34,46 @@
             background-size: cover;
         }
     }
+
+    &-content {
+        display: block;
+        position: relative;
+
+        z-index: 800;
+
+
+        &-element:first-child {
+            padding-right: 565px;
+
+            margin-bottom: 180px;
+
+            & > img {
+                position: absolute;
+
+                top: -170px;
+                right: 80px;
+
+                width: 385px;
+                height: 670px;
+            }
+        }
+
+        &-element:last-child {
+            padding-left: 565px;
+
+            margin-bottom: 180px;
+
+            & > img {
+                position: absolute;
+
+                bottom: 0;
+                left: 70px;
+
+                width: 416px;
+                height: 423px;
+            }
+        }
+        
+    }
+
 }
