@@ -1,0 +1,61 @@
+.support-ukr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 600px;
+    height: 84px;
+
+    background: linear-gradient(90deg, #005EB8 36.98%, #FFFFFF 50.9%, #FFD101 63.54%);
+
+    & > div {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    &-titel {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1.2;
+
+        margin: 0;
+        margin-bottom: 4px;
+
+        align-items: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    &-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        align-items: center;
+        text-transform: uppercase;
+
+        margin: 0;
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 216px;
+        height: 48px;
+
+        font-family: 'Lato';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #000000;
+
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        border: none;
+
+    }
+}
