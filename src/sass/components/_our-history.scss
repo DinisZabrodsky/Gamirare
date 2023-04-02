@@ -3,4 +3,28 @@
     padding-bottom: 190px;
 
     background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+
+    &-titel {
+        position: relative;
+        margin-bottom: 115px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: -55px;
+            top: 33px;
+
+            display: block;
+
+            
+            width: 360px;
+            height: 45px;
+            background-color: transparent;
+
+            background-image: url(../images/Our-history/OurHistory.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 }
