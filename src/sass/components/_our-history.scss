@@ -5,9 +5,15 @@
     background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
     
     &-conteiner {
-        padding-left: 300px;
-        padding-right: 300px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        align-items: center;
+
+        // margin-left: auto;
+        // margin-right: auto;
     }
+
 
     
     &-titel {
@@ -36,16 +42,24 @@
     }
 
     &-content {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         position: relative;
 
+
         z-index: 800;
+
+        &-element {
+            width: 1321px;
+
+            margin-bottom: 180px;
+        }
 
 
         &-element:first-child {
             padding-right: 565px;
-
-            margin-bottom: 180px;
 
             & > img {
                 position: absolute;
@@ -60,8 +74,6 @@
 
         &-element:last-child {
             padding-left: 565px;
-
-            margin-bottom: 180px;
 
             & > img {
                 position: absolute;
