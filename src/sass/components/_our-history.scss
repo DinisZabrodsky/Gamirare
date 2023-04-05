@@ -3,89 +3,73 @@
 .our-history {
 
     background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+
+}
     
-    &-conteiner {
-        padding-left: 30px;
-        padding-right: 30px;
+.our-history-titel {
 
-        align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 15px;
 
-        // margin-left: auto;
-        // margin-right: auto;
-    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: -55px;
+        top: 33px;
 
-
-    
-    &-titel {
-        position: relative;
-        margin-bottom: 115px;
-        margin-left: 25px;
-
-        &::after {
-            content: "";
-            position: absolute;
-            left: -55px;
-            top: 33px;
-
-            display: block;
+        display: block;
 
             
-            width: 360px;
-            height: 45px;
-            background-color: transparent;
+        width: 360px;
+        height: 45px;
+        background-color: transparent;
 
-            background-image: url(../images/Our-history/OurHistory.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+        background-image: url(../images/Our-history/OurHistory.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+}
 
-    &-content {
+.our-history {
+
+
+    &-content-element {
         display: flex;
-        flex-direction: column;
-        align-items: center;
 
-        position: relative;
+        margin-bottom: 180px;
 
+        &:first-child > &-text {
+            padding-top: 80px;
+            background-color: red;
 
-        z-index: 800;
-
-        &-element {
-            width: 1321px;
-
-            margin-bottom: 180px;
-        }
-
-
-        &-element:first-child {
-            padding-right: 565px;
-
-            & > img {
-                position: absolute;
-
-                top: -170px;
-                right: 80px;
-
-                width: 385px;
+            &-img {
                 height: 670px;
             }
         }
 
-        &-element:last-child {
-            padding-left: 565px;
+        &:nth-child(even){
+            flex-direction: row-reverse;
+        }
 
-            & > img {
-                position: absolute;
+        &-text {
+            flex-basis: 58%;
+        }
 
-                bottom: 20px;
-                left: 70px;
+        &-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-                width: 416px;
-                height: 423px;
+            flex-basis: 42%;
+
+            & img {
+                display: block;
+                object-fit: cover;
+
             }
         }
-        
     }
 
 }
