@@ -1,16 +1,20 @@
 .support-ukr {
     display: flex;
-    justify-content: center;
     align-items: center;
 
-    gap: 600px;
     height: 84px;
 
     background: linear-gradient(90deg, #005EB8 36.98%, #FFFFFF 50.9%, #FFD101 63.54%);
 
-    & > div {
-        margin-top: auto;
-        margin-bottom: auto;
+    &-conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+        
     }
     
     &-titel {
