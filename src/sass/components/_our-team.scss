@@ -1,25 +1,14 @@
 .our-team {
   position: relative;
+  z-index: -2;
+
+  background: linear-gradient(180deg, #0d000d 0%, #0d000d 10.94%, #157ebf 100%);
 
   // background: linear-gradient(180deg, #0D000D 10.94%, #157EBF 100%);
 
   // &-backImg {
   //     background: url(../images/Our-team/our-team-background-img.svg)
   // }
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    z-index: 999;
-
-    width: 300px;
-    height: 265px;
-    background-color: red;
-    background: url(../images/Our-team/our-team-background-img.svg);
-  }
 }
 
 .our-team > .conteiner {
@@ -54,7 +43,6 @@
 
   flex-basis: 100%;
 
-  // overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-padding: 24px;
   border-radius: 8px;
@@ -86,4 +74,19 @@
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #ffffff;
   border-radius: 86px;
+}
+
+.our-team-backimg {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+
+  width: 1920px;
+  height: 390px;
+
+  background: url(../images/Our-team/our-team-background-img.svg);
+  background-position: bottom;
 }

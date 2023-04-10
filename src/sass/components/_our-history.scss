@@ -1,68 +1,73 @@
-
-
 .our-history {
+  // background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+  background: linear-gradient(
+    180deg,
+    #0d000d 0%,
+    #0d000d 27%,
+    #011126 55.3%,
+    #011126 85.3%,
+    #0d000d 100%
+  );
 
-    background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
-
+  & > .conteiner {
+    padding-bottom: 180px;
+  }
 }
-    
+
 .our-history-titel {
+  position: relative;
+  margin-bottom: 15px;
+  margin-left: 15px;
 
-    position: relative;
-    margin-bottom: 15px;
-    margin-left: 15px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: -55px;
+    top: 33px;
 
-    &::after {
-        content: "";
-        position: absolute;
-        left: -55px;
-        top: 33px;
-    
-        width: 360px;
-        height: 45px;
+    width: 360px;
+    height: 45px;
 
-        background-image: url(../images/Our-history/OurHistory.svg);
-    }
+    background-image: url(../images/Our-history/OurHistory.svg);
+  }
 }
 
 .our-history {
+  &-content-element {
+    display: flex;
 
-
-    &-content-element {
-        display: flex;
-
-        margin-bottom: 180px;
-
-        &:first-child > &-text {
-            padding-top: 80px;
-            // background-color: red;
-
-            &-img {
-                height: 670px;
-            }
-        }
-
-        &:nth-child(even){
-            flex-direction: row-reverse;
-        }
-
-        &-text {
-            flex-basis: 58%;
-        }
-
-        &-img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            flex-basis: 42%;
-
-            & img {
-                display: block;
-                object-fit: contain;
-
-            }
-        }
+    &:first-child {
+      margin-bottom: 180px;
     }
 
+    &:first-child > &-text {
+      padding-top: 80px;
+      // background-color: red;
+
+      &-img {
+        height: 670px;
+      }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    &-text {
+      flex-basis: 58%;
+    }
+
+    &-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex-basis: 42%;
+
+      & img {
+        display: block;
+        object-fit: contain;
+      }
+    }
+  }
 }
