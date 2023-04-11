@@ -1,0 +1,43 @@
+.footer {
+    background: linear-gradient(180deg, #191838 0%, rgba(25, 24, 56, 0) 100%);
+
+  &-conteiner {
+    display: flex;
+    justify-content: center;
+
+    padding: 40px 15px;
+    gap: 180px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-list {
+    gap: 16px;
+
+    margin-top: 24px;
+  }
+
+  & a {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 94.8%;
+
+    color: #bebebe;
+  }
+
+  & p {
+    margin-top: 55px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 94.8%;
+
+    text-transform: uppercase;
+  }
+}
