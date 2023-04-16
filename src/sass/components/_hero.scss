@@ -73,6 +73,11 @@
     border: 2px solid rgba(22, 220, 242, 0.1);
     border-radius: 999px;
 
+    &:hover, &:focus {
+        background: linear-gradient(92.64deg, rgba(22, 220, 242, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(22, 220, 242, 0) 100%), radial-gradient(84.92% 150% at 50% 138.75%, rgba(22, 220, 242, 0.24) 0%, rgba(22, 220, 242, 0) 100%), linear-gradient(267.36deg, rgba(22, 220, 242, 0.5) 0%, rgba(22, 220, 242, 0.5) 100%);
+        border: 2px solid rgba(22, 220, 242, 0.1);
+    }
+
     &-svg {
         display: block;
 
