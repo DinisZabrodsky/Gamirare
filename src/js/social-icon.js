@@ -4,8 +4,9 @@ const refs = {
 }
 
 refs.socialMoreBtn.addEventListener('click', addClassToConteiner)
-// refs.socialConteiner.addEventListener('blur', addClassToConteiner)
 
 function addClassToConteiner () {
     refs.socialConteiner.classList.toggle('is-hiden');
 }
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event
