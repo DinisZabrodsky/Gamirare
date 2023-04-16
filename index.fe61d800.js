@@ -1,0 +1,2 @@
+let e=document.title;window.addEventListener("blur",(()=>{document.title="Come back :("})),window.addEventListener("focus",(()=>{document.title=e}));const t={socialMoreBtn:document.querySelector(".social-icon-more"),socialConteiner:document.querySelector(".social-icon-list")};t.socialMoreBtn.addEventListener("click",(function(){t.socialConteiner.classList.toggle("is-hiden")}));
+//# sourceMappingURL=index.fe61d800.js.map
