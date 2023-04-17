@@ -1,6 +1,6 @@
 const refs = {
     socialMoreBtn: document.querySelector('.social-icon-more'),
-    socialConteiner: document.querySelector('.social-icon-list'),
+    socialConteiner: document.querySelector('.social-icon'),
 }
 
 refs.socialMoreBtn.addEventListener('click', addClassToConteiner)
