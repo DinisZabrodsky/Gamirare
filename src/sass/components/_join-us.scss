@@ -33,6 +33,8 @@
     transform: matrix(1, 0, 0, -1, 0, 0);
 
     & h2 {
+        margin: 0;
+
         margin-bottom: 32px;
     }
 
@@ -56,9 +58,7 @@
     font-family: 'Lato';
     font-weight: 400;
 
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #FFFFFF;
-    border-radius: 86px;
+
 
     &-svg {
         display: block;
