@@ -1,4 +1,5 @@
-const formEl = document.querySelector('.subscribe-form');
+
+const formEl = document.querySelector('#form-one');
 
 formEl.addEventListener('submit', submitForm)
 
@@ -9,7 +10,7 @@ function submitForm (event) {
     const valueData = {};
 
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(formEl);
     formData.forEach((value, name) => {
         valueData[name] = value;
     });

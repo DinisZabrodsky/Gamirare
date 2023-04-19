@@ -1,0 +1,85 @@
+.about-game-our-atmosphere {
+    background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+
+    &> .conteiner {
+        padding-bottom: 120px;
+        // overflow: hidden;
+    }
+}
+
+.our-atmosphere-titel {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 45px;
+  
+      width: 600px;
+      height: 23px;
+  
+      background-image: url(../images/AboutGame-OurAtmosphere/our-atmosphere-titel.svg);
+    }
+  }
+
+.our-atmosphere-list {
+    display: flex;
+    margin-top: 80px;
+
+    gap: 36px;
+    z-index: 2;
+
+    &-element {
+        display: block;
+        min-width: 416px;
+        height: 726px;
+
+        background: linear-gradient(180deg, #051227 0%, #0E0410 100%);
+        border-radius: 16px;
+    }
+}
+
+  
+  .our-atmosphere {
+    &-content-element {
+      display: flex;
+        margin-top: 80px;
+  
+      &-text {
+        flex-basis: 58%;
+      }
+  
+      &-img {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        flex-basis: 42%;
+  
+        & img {
+          display: block;
+          object-fit: contain;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -70px;
+            left: 15px;
+
+            width: 460px;
+            height: 365px;
+
+            background: radial-gradient(50.08% 49.99% at 49.98% 50.03%, rgba(6, 127, 255, 0.7) 0%, rgba(5, 98, 197, 0.7) 17%, rgba(3, 64, 128, 0.7) 40%, rgba(2, 36, 73, 0.7) 60%, rgba(1, 17, 33, 0.7) 78%, rgba(0, 4, 9, 0.7) 92%, rgba(0, 0, 0, 0.7) 100%);
+            background-blend-mode: screen;
+            mix-blend-mode: screen;
+            transform: matrix(0.52, -0.86, 0.88, 0.47, 0, 0);
+        }
+      }
+    }
+  }

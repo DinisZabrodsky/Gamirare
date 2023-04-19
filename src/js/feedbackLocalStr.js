@@ -1,6 +1,6 @@
 import throttle from "lodash.throttle";
 
-const form = document.querySelector('.subscribe-form');
+const form = document.querySelector('#form-one');
 const fromName = form.querySelector('[name="name"]');
 const formEmail = form.querySelector('[name="email"]');
 const formComent = form.querySelector('[name="coment"]');
