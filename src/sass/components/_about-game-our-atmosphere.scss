@@ -1,5 +1,6 @@
 .about-game-our-atmosphere {
     background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+    overflow: hidden;
 
     &> .conteiner {
         padding-bottom: 120px;
@@ -33,12 +34,62 @@
     z-index: 2;
 
     &-element {
-        display: block;
-        min-width: 416px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+
         height: 726px;
+        min-width: 416px;
 
         background: linear-gradient(180deg, #051227 0%, #0E0410 100%);
         border-radius: 16px;
+        border: 8px solid #F3FEFF;
+        overflow: hidden;
+
+        cursor: pointer;
+        
+        transition: all .8s linear;
+
+        & > img {
+            object-position: center;
+            object-fit: contain;
+        }
+
+        & p {
+            position: absolute;
+            left: 0;
+            margin: 0;
+
+            width: 100%;
+
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid #EFE3CC;
+            backdrop-filter: blur(2.5px);
+
+            font-family: 'Cinzel Decorative';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 94.8%;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+
+            color: #F3FEFF;
+            text-shadow: 0px 0px 14px #16DCF2;
+
+            &:nth-child(1){
+                top: 0;
+            }
+
+            &:nth-child(3) {
+                bottom: 0;
+            }
+        }
+
+        &:hover, &:focus {
+            min-width: 850px;
+            box-shadow: 0px 0px 10px #ff0000;
+        }
     }
 }
 
