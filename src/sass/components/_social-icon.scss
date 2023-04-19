@@ -18,7 +18,9 @@
         }
 
         .two {
+            z-index: -1;
             opacity: 0;
+            pointer-events: none;
         }
 
         .social-icon-more {
