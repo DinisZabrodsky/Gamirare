@@ -29,6 +29,12 @@
     line-height: 94.8%;
 
     color: #bebebe;
+
+    transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+      text-shadow: 0px 0px 10px #16DCF2;
+    }
   }
 
   & p {
