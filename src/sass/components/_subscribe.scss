@@ -75,6 +75,9 @@
 
     color: #ffffff;
 
+    // transform: translateY(0%);
+    // transition: transform 500ms  linear;
+
     &::placeholder {
       font-family: 'Lato';
       font-style: normal;
@@ -90,6 +93,15 @@
       outline: none;
     }
   }
+
+  // & textarea {
+
+  //         height: 80px;
+  //   &:focus {
+  //     height: 80px;
+  //     // transform: translateY(20%);
+  //   }
+  // }
 }
 
 .subscribe-form-button {
