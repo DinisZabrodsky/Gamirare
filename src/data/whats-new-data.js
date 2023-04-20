@@ -1,6 +1,6 @@
 export const dataForWhatsNew = [
     {
-        img: "./images/AboutGame-WantNew/image001.jpg",
+        img: "https://github.com/DinisZabrodsky/Gamirare/blob/main/src/images/AboutGame-WantNew/image001.jpg",
         alt: "first image",
         date: "16.02.2023",
         titel: "як створювалась гра",
@@ -8,7 +8,7 @@ export const dataForWhatsNew = [
         id: "001",
     },
     {
-        img: "./images/AboutGame-WantNew/image002.jpg",
+        img: "https://github.com/DinisZabrodsky/Gamirare/blob/main/src/images/AboutGame-WantNew/image002.jpg",
         alt: "first image",
         date: "16.02.2023",
         titel: "як створювалась гра",
@@ -16,7 +16,7 @@ export const dataForWhatsNew = [
         Id: "001",
     },
     {
-        img: "./images/AboutGame-WantNew/image003.jpg",
+        img: "https://github.com/DinisZabrodsky/Gamirare/blob/main/src/images/AboutGame-WantNew/image003.jpg",
         alt: "first image",
         date: "16.02.2023",
         titel: "як створювалась гра",
