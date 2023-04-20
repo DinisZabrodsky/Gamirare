@@ -1,0 +1,39 @@
+.twitch-ua-hero {
+    background-color: #0D000D;
+}
+
+.twitch-ua-hero-conteiner {
+    display: block;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1920px;
+    height: 707px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/Twitch-ua/twitch-ua.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/Twitch-ua/twitch-ua@2x.jpg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        width: 100%;
+        height: 268px;
+
+        background: linear-gradient(180deg, rgba(13, 0, 13, 0) 0%, #0D000D 100%);
+
+    }
+}
+

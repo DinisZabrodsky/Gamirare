@@ -16,7 +16,7 @@ function createCard (elements) {
         return `
         <li class="whats-new-list-element">
         <div class="whats-new-list-element-img">
-            <img src=${img} alt="${alt}">
+            <img src=${img} alt="${alt}" loading="lazy">
         </div>
         <div class="whats-new-list-element-content">
             <p class="wn-date">${date}</p>

@@ -1,0 +1,66 @@
+.twitch-ua-about {
+    background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+
+    & > .conteiner {
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+}
+
+.twitch-ua-about {
+
+    &-conteiner {
+        display: flex;
+        gap: 100px;
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-basis: 45%;
+
+        & img {
+            display: block;
+            object-fit: cover;
+        }
+
+    }
+
+    &-content {
+        display: block;
+        flex-basis: 53%;
+
+    }
+}
+
+.twitch-ua-about-content-link {
+    display: block;
+    margin-top: 40px;
+
+
+    & h3 {
+        display: block;
+        
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    & > div {
+        display: flex;
+        gap: 65px;
+
+        margin-top: 40px;
+
+        & a {
+            display: block;
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
