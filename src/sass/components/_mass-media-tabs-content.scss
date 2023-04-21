@@ -1,0 +1,39 @@
+.ms {
+    background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+
+    & > .conteiner {
+        padding-bottom: 120px;
+    }
+
+    & input[type="radio"]{
+        display: none;
+    }
+}
+
+.ms-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1094px;
+
+    margin: 0 auto;
+
+    & > label {
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover, &:focus {
+            color: #16DCF2;
+        }
+
+        #strim:checked ~ &.strim,
+        #update:checked ~ &.update,
+        #inTheMedia:checked ~ &.inTheMedia,
+        #gallery:checked ~ &.gallery{
+            color: red;
+        }
+    }
+
+
+}
