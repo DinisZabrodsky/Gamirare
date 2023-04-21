@@ -97,6 +97,11 @@ h3 {
     color: #FFFFFF;
 }
 
+h4 {
+  font-family: 'Lato';
+  font-style: normal;
+}
+
 .form-titel-h3 {
   display: inline-block;
   margin: 0;
@@ -116,6 +121,8 @@ a {
 }
 
 p {
+  display: block;
+
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -159,5 +166,48 @@ button {
 
   &:active {
     background-color: #16DCF2;
+  }
+}
+
+label {
+  display: block;
+}
+
+input, textarea {
+  display: block;
+  resize: none;
+
+  width: 233px;
+  height: 40px;
+  padding: 10px;
+
+  border: none;
+  border-bottom: 1.5px solid #ffffff;
+  background-color: transparent;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: #ffffff;
+
+// transform: translateY(0%);
+// transition: transform 500ms  linear;
+
+  &::placeholder {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+
+    color: #ffffff;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
   }
 }

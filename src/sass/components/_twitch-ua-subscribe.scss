@@ -1,0 +1,45 @@
+.twitch-ua-subscribe {
+    background: linear-gradient(180deg, #011126  0%, #0D000D 100%);
+
+    & > .conteiner {
+        padding-bottom: 120px;
+    }
+}
+
+.twitch-ua-subscribe-conteiner {
+    display: block;
+    width: 642px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    & h4 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.2;
+        text-transform: uppercase;
+
+        color: #F3FEFF;
+    }
+
+    & p {
+        margin-top: 24px;
+
+        font-size: 16px;
+        line-height: 1.18;
+
+        color: #FFFFFF;
+    }
+
+    & input {
+        width: 573px;
+    }
+
+    & button {
+        margin-left: auto;
+        margin-top: 60px;
+
+        width: 188px;
+        height: 50px;
+    }
+}

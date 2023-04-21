@@ -43,52 +43,8 @@
 
   & input,
   & textarea {
-    display: block;
-    resize: none;
-
     width: 320px;
-    height: 40px;
-    padding: 10px;
-
-    border: none;
-    border-bottom: 1.5px solid #ffffff;
-    background-color: transparent;
-
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-
-    color: #ffffff;
-
-    // transform: translateY(0%);
-    // transition: transform 500ms  linear;
-
-    &::placeholder {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.2;
-
-      color: #ffffff;
-    }
-
-    &:focus,
-    &:hover {
-      outline: none;
-    }
   }
-
-  // & textarea {
-
-  //         height: 80px;
-  //   &:focus {
-  //     height: 80px;
-  //     // transform: translateY(20%);
-  //   }
-  // }
 }
 
 .subscribe-form-button {
