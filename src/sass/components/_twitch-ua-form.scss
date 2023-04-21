@@ -1,0 +1,117 @@
+.twitch-ua-form {
+
+    & > .conteiner {
+        padding-bottom: 20px;
+    }
+}
+
+
+.twitch-ua-form-conteiner {
+    display: block;
+    position: relative;
+  
+    width: 868px;
+    height: 492px;
+    padding: 60px;
+    padding-top: 50px;
+  
+    margin-left: auto;
+    margin-right: auto;
+  
+    background: #1d1d1d;
+    box-shadow: 0px 0px 18px #16dcf2;
+  
+  
+    // &-text {
+    //   font-weight: 700;
+    //   font-size: 16px;
+    //   line-height: 1.19;
+    // }
+  }
+
+  .twitch-ua-form-conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & label {
+        display: block;
+    }
+  
+    & input {
+      display: block;
+  
+      width: 233px;
+      height: 40px;
+      padding: 10px;
+  
+      border: none;
+      border-bottom: 1.5px solid #ffffff;
+      background-color: transparent;
+  
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+  
+      color: #ffffff;
+  
+      // transform: translateY(0%);
+      // transition: transform 500ms  linear;
+  
+      &::placeholder {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+  
+        color: #ffffff;
+      }
+    }
+
+    & .inputNickName > input {
+        margin-top: 32px;
+        width: 339px;
+    }
+}
+
+.twitch-ua-form-conteiner-list {
+    display: flex;
+    gap: 24px;
+
+    margin-top: 40px;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+    }
+}
+
+.twitch-ua-form-conteiner-lastSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+    & > span {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 1;
+
+        background: linear-gradient(90deg, #16DCF2 0%, #EDC902 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &  button {
+        width: 201px;
+        height: 50px;
+    }
+}
