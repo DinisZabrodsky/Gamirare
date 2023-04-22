@@ -1,5 +1,27 @@
+@keyframes ops {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
 .ms {
     background: linear-gradient(180deg, #0D000D 0%, #011126 100%);
+    overflow: hidden;
 
     & > .conteiner {
         padding-bottom: 120px;
@@ -18,10 +40,11 @@
     width: 1094px;
 
     margin: 0 auto;
+    margin-bottom: 80px;
 
     & > label {
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: color 500ms linear;
 
         &:hover, &:focus {
             color: #16DCF2;
@@ -30,10 +53,124 @@
         #strim:checked ~ &.strim,
         #update:checked ~ &.update,
         #inTheMedia:checked ~ &.inTheMedia,
-        #gallery:checked ~ &.gallery{
-            color: red;
+        #gallery:checked ~ &.gallery {
+            color: #16DCF2;;
         }
     }
+}
+
+.ms-content {
+    position: relative;
+    
+
+    & > div {
+        display: none;
+
+    }
+
+    #strim:checked ~ & .strim,
+    #update:checked ~ & .update,
+    #inTheMedia:checked ~ & .inTheMedia,
+    #gallery:checked ~ & .gallery {
+        display: block;
+        opacity: 0;
+
+        animation: ops 1000ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+}
 
 
+.ms-content .update {
+
+    & .ms-update-firstEl {
+        display: flex;
+        gap: 35px;
+
+        & > .ms-element-img {
+            display: block;
+
+            width: 642px;
+            height: 360px;
+
+            border-radius: 16px;
+            overflow: hidden;
+            
+            & > img {
+                display: block;
+                object-fit: cover;
+            }
+        }
+
+        & > .ms-element-content {
+            display: block;
+            flex-basis: 614px;
+
+            & > .ms-element-category {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 1.2;
+
+                color: #16DCF2;
+            }
+
+            & > .ms-element-titel {
+                margin-top: 24px;
+
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 1.18;
+
+                color: #FCFFFF;
+            }
+
+            & > .ms-element-text{
+                margin-top: 24px;
+
+                font-size: 20px;
+            }
+        }
+    }
+}    
+
+
+
+.ms-element-content-autorBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 24px;
+
+    & > .ms-element-button {
+        width: 190px;
+        height: 50px;
+    }
+
+    & > .ms-element-autor {
+        display: flex;
+        align-items: center;      
+        width: 173px;
+        height: 60px;
+
+        & > img {
+            display: block;
+            margin-left: 20px;
+
+            width: 60px;
+            height: 60px;
+
+            border-radius: 50%;
+        }
+
+        &  .autor-name {
+                        font-weight: 600;
+                        font-size: 16px;
+        }
+
+        &  .publish-date {
+                        font-size: 16px;
+        }             
+   }
+                
 }
