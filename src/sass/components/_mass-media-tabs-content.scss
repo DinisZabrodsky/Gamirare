@@ -54,7 +54,7 @@
         #update:checked ~ &.update,
         #inTheMedia:checked ~ &.inTheMedia,
         #gallery:checked ~ &.gallery {
-            color: #16DCF2;;
+            color: #16DCF2;
         }
     }
 }
@@ -314,7 +314,7 @@
     cursor: pointer;
 
     &:hover, &:focus {
-        box-shadow: #16DCF2;
+        box-shadow: 0 0 10px #16DCF2;
     } 
 }
 
