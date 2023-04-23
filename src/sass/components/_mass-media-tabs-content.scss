@@ -310,6 +310,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px 40px;
+
+    cursor: pointer;
+
+    &:hover, &:focus {
+        box-shadow: #16DCF2;
+    } 
 }
 
  
