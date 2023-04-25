@@ -1,2 +1,0 @@
-let e=document.title;window.addEventListener("blur",(()=>{document.title="Come back :("})),window.addEventListener("focus",(()=>{document.title=e}));const t={socialMoreBtn:document.querySelector(".social-icon-more"),socialConteiner:document.querySelector(".social-icon")};t.socialMoreBtn.addEventListener("click",(function(){t.socialConteiner.classList.toggle("is-hiden")}));
-//# sourceMappingURL=marketplayce.8f9824fb.js.map
