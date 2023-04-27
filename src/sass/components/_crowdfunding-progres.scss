@@ -1,3 +1,13 @@
+@keyframes walve { 
+    0% {
+        transform:  rotate(0deg);
+    }
+    
+    100% {
+        transform:  rotate(360deg);
+    }
+}
+
 .cp {
     background-color: #0D000D;
 
@@ -117,11 +127,28 @@
         line-height: 1.15;
 
         text-transform: uppercase;
+        text-align: center;
 
         color: #FFFFFF;
     }
 
-    &::before, &::after, &-animate::before, &-animate::after{
+    &-description {
+
+        display: block;
+        margin-top: 40px;
+
+        font-family: 'Alice';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.15;
+
+        text-transform: uppercase;
+       text-align: center;
+        color: #FFFFFF;
+    }
+
+    &::before, &::after {
         content: "";
         position: absolute;
         // top: -230%;
@@ -175,13 +202,122 @@
         }
     }
 
-    @keyframes walve { 
+
+}
+
+.cp-last-img {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 70px;
+
+
+    width: 192px;
+    height: 192px;
+    background-color: #258F8D;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    & > img {
+        position: absolute;
+        top:0;
+        left: 0;
+
+        display: block;
+        width: 192px;
+        height: 192px;
+
+        z-index: 1;
+    }
+
+    &-text {
+        position: absolute;
+        z-index: 2;
+
+        font-family: 'Alice';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1.15;
+
+        text-transform: uppercase;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    &-description {
+
+        display: block;
+        margin-top: 40px;
+
+        font-family: 'Alice';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.13;
+
+        text-transform: uppercase;
+       text-align: center;
+        color: #FFFFFF;
+    }
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        // top: -230%;
+        left: -91%;
+        // top: -195%;
+        // transform: translate(-49%, -68%);
+        // transform: translate(-49%, -110%);
+
+        width: 300%;
+        height: 300%;
+    }
+
+    &::before {
+        top: -218%;
+
+        width: 280%;
+        height: 280%;
+
+        border-radius: 36%;
+        background-color: #357876;
+        animation: interestBfrPer 500ms linear forwards, walve 9s linear infinite;
+    }
+
+    &::after {
+        width: 290%;
+        height: 290%;
+        border-radius: 40%;
+        background-color: #363B3F;
+        animation: interestAftPer 1500ms linear forwards, walve 12s linear infinite;
+    }
+
+
+
+    @keyframes interestBfrPer {
         0% {
-            transform:  rotate(0deg);
+            top: -195%;
         }
         
         100% {
-            transform:  rotate(360deg);
+            top: -208%;
         }
     }
+
+    @keyframes interestAftPer {
+        0% {
+            top: -195%;
+        }
+        
+        100% {
+            top: -220%;
+        }
+    }
+
 }
