@@ -116,34 +116,50 @@
         height: 300%;
     }
 
-    // &::before {
-    //     border-radius: 30%;
-    //     // background-color: #258F8D;
+    &::before {
 
-    //     // background-color: #357876;
-    //     background-color: #F2AE30;
-    //     animation: walve 7s linear infinite;
-    // }
-
-    &::after {
-        width: 300%;
-        height: 300%;
+        width: 280%;
+        height: 280%;
 
         border-radius: 39%;
         background-color: #357876;
         // background-color: #258F8D;
         // background-color: red;
         animation: walve 15s linear infinite;
+    //     border-radius: 30%;
+    //     // background-color: #258F8D;
+
+    //     // background-color: #357876;
+    //     background-color: #F2AE30;
+    //     animation: walve 7s linear infinite;
     }
 
-    &-animate::before {
+    &::after {
         width: 290%;
         height: 290%;
-        border-radius: 47%;
+        border-radius: 45%;
         background-color: #363B3F;
-        animation: walve 11s linear infinite;
-        z-index: 1;
+        animation: walve 10s linear infinite;
+        // z-index: 1;
+
+        // width: 300%;
+        // height: 300%;
+
+        // border-radius: 39%;
+        // background-color: #357876;
+        // // background-color: #258F8D;
+        // // background-color: red;
+        // animation: walve 15s linear infinite;
     }
+
+    // &-animate::before {
+    //     width: 290%;
+    //     height: 290%;
+    //     border-radius: 47%;
+    //     background-color: #363B3F;
+    //     animation: walve 11s linear infinite;
+    //     z-index: 1;
+    // }
 
     @keyframes walve { 
         0% {
