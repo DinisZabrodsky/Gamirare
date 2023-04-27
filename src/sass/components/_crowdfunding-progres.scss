@@ -89,49 +89,60 @@
 
     width: 266px;
     height: 266px;
+    background-color: #258F8D;
 
     border-radius: 50%;
     overflow: hidden;
 
-    &-animate{
+    & > img {
+        position: absolute;
+        top:0;
+        left: 0;
+
         display: block;
         width: 266px;
         height: 266px;
-        background-color: #258F8D;
+
+        z-index: 1;
     }
 
     &-text {
         position: absolute;
-        color: beige;
+        z-index: 2;
+
+        font-family: 'Alice';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 1.15;
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
     }
 
-    &::before, &::after, &-animate::before{
+    &::before, &::after, &-animate::before, &-animate::after{
         content: "";
         position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-49%, -70%);
+        // top: -230%;
+        left: -91%;
+        // top: -195%;
+        // transform: translate(-49%, -68%);
+        // transform: translate(-49%, -110%);
 
         width: 300%;
         height: 300%;
     }
 
     &::before {
+        top: -218%;
 
         width: 280%;
         height: 280%;
 
         border-radius: 39%;
         background-color: #357876;
-        // background-color: #258F8D;
-        // background-color: red;
-        animation: walve 15s linear infinite;
-    //     border-radius: 30%;
-    //     // background-color: #258F8D;
-
-    //     // background-color: #357876;
-    //     background-color: #F2AE30;
-    //     animation: walve 7s linear infinite;
+        animation: interestBfr 500ms linear forwards, walve 15s linear infinite;
     }
 
     &::after {
@@ -139,35 +150,38 @@
         height: 290%;
         border-radius: 45%;
         background-color: #363B3F;
-        animation: walve 10s linear infinite;
-        // z-index: 1;
-
-        // width: 300%;
-        // height: 300%;
-
-        // border-radius: 39%;
-        // background-color: #357876;
-        // // background-color: #258F8D;
-        // // background-color: red;
-        // animation: walve 15s linear infinite;
+        animation: interestAft 1500ms linear forwards, walve 10s linear infinite;
     }
 
-    // &-animate::before {
-    //     width: 290%;
-    //     height: 290%;
-    //     border-radius: 47%;
-    //     background-color: #363B3F;
-    //     animation: walve 11s linear infinite;
-    //     z-index: 1;
-    // }
 
-    @keyframes walve { 
+
+    @keyframes interestBfr {
         0% {
-            transform: translate(-50%, -80%) rotate(0deg);
+            top: -195%;
         }
         
         100% {
-            transform: translate(-50%, -80%) rotate(360deg);
+            top: -228%;
+        }
+    }
+
+    @keyframes interestAft {
+        0% {
+            top: -195%;
+        }
+        
+        100% {
+            top: -240%;
+        }
+    }
+
+    @keyframes walve { 
+        0% {
+            transform:  rotate(0deg);
+        }
+        
+        100% {
+            transform:  rotate(360deg);
         }
     }
 }
