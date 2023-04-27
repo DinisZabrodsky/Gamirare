@@ -1,0 +1,70 @@
+.ch {
+    align-items: center;
+    background-color: #0D000D;
+};
+
+.ch-conteiner {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    justify-content: center;
+    align-items: center;
+    
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    max-width: 1920px;
+    height: 468px;
+
+    background-image: linear-gradient(180deg, rgba(13, 0, 13, 0) 0%, #0D000D 100%), url(../images/Crowdfunding/Crowdfunding-hero.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(180deg, rgba(13, 0, 13, 0) 0%, #0D000D 100%), url(../images/Crowdfunding/Crowdfunding-hero@2x.jpg);
+    }
+
+    // @media screen and (min-width: 1920px) {
+        // max-width: 1920px;
+        // height: 1037px;
+
+        // background-image: url(../images/Hero/BGHero.jpg);
+
+        // @media screen and (min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        //     background-image: url(../images/Hero/BGHero@2x.jpg);
+        // }
+    //}
+}
+
+.ch-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1094px;
+
+    & > h1 {
+        font-family: 'Alice';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.15;
+        text-transform: uppercase;
+
+        color: #FFFCF5;
+    }
+
+    & > button {
+        width: 190px;
+        height: 50px;
+
+        background: rgba(255, 255, 255, 0.1);
+
+        font-weight: 400;
+    }
+}
