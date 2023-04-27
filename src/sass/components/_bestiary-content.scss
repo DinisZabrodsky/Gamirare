@@ -1,0 +1,53 @@
+.bestiary {
+    background: linear-gradient(180deg, #0D000D 0%, #011126 50%,  #0D000D 100%);
+
+    & > .conteiner {
+        position: relative;
+
+        padding-top: 200px;
+        padding-bottom: 40px;
+    }
+}
+
+.bestiary-nav {
+
+    & li {
+        position: relative;
+
+     
+
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 10px;
+        padding-left: 30px;
+
+        background-image: url(../images/Bestiary/Vector001.svg);
+        background-position: -5px -3px;
+        background-repeat: no-repeat;
+
+        &  p {
+            margin: 0;
+            margin-bottom: 20px;
+        } 
+
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+
+        //     width: 30px;
+        //     height: 350px;
+
+        //     background-image: url(../images/Bestiary/Vector001.svg);
+        //     // background-position: 50;
+        //     background-repeat: no-repeat;
+            
+        // }
+
+
+
+    }
+
+}
