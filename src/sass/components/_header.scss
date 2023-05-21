@@ -36,10 +36,16 @@ nav {
     flex-grow: 1;
 }
 
-.header-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.headerList {
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
 
     & li {
         border: none;
@@ -47,7 +53,23 @@ nav {
     }
 }
 
-.header-list a, .header-language {
+.headerMobil {
+    display: block;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.headerMobileNav {
+    display: block;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.headerList a, .headerLanguage {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -71,9 +93,15 @@ nav {
 
 }
 
-.header-language {
-    background-color: transparent;
-    border: none;
+.headerLanguage {
+    display: none;
+
+    @media screen and (min-width: 767px) {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
 
     & option {
         color: #DDDDDD;
